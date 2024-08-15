@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StockReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Product>
+		<Name>Chocolate</Name>
+		<Quantity>19</Quantity>
+	</Product>
+	<Product>
+		<Name>Chips</Name>
+		<Quantity>7</Quantity>
+	</Product>
+	<Product>
+		<Name>Still water</Name>
+		<Quantity>10</Quantity>
+	</Product>
+	<Product>
+		<Name>Pepsi</Name>
+		<Quantity>1</Quantity>
+	</Product>
+</StockReport>

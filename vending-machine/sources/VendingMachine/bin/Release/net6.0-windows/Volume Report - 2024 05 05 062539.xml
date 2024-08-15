@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VolumeReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<StartTime>2000-02-02T00:00:00</StartTime>
+	<EndTime>2026-03-03T00:00:00</EndTime>
+	<Sales>
+		<Product>
+			<Name>Chocolate</Name>
+			<Quantity>1</Quantity>
+		</Product>
+	</Sales>
+</VolumeReport>

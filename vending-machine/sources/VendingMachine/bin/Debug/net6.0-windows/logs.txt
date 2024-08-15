@@ -1,0 +1,32 @@
+2024-04-09 14:37:54,256 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 14:37:57,237 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-09 14:38:12,116 INFO  Nagarro.VendingMachine.Business.Services.PaymentService.CashPayment - User made a cash payment
+2024-04-09 14:38:12,116 INFO  Nagarro.VendingMachine.Business.UseCases.BuyUseCase - Still water bought
+2024-04-09 14:38:29,204 INFO  Nagarro.VendingMachine.Business.Services.PaymentService.CardPayment - User made a card payment
+2024-04-09 14:38:29,206 INFO  Nagarro.VendingMachine.Business.UseCases.BuyUseCase - Still water bought
+2024-04-09 14:38:34,556 INFO  Nagarro.VendingMachine.Business.UseCases.LoginUseCase - User logged in
+2024-04-09 14:38:40,136 INFO  Nagarro.VendingMachine.Business.Services.ReportService.ReportService - User generated a xml report for Stock
+2024-04-09 14:38:42,223 INFO  Nagarro.VendingMachine.Business.UseCases.LogoutUseCase - User logged out
+2024-04-09 14:49:46,283 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 14:50:40,524 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 14:53:52,233 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 14:53:55,451 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-09 14:54:01,847 ERROR Nagarro.VendingMachine.VendingMachineApplication - Nagarro.VendingMachine.Business.Exceptions.InvalidProductIdException: There is no product with id 0!
+   at Nagarro.VendingMachine.Business.UseCases.BuyUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\BuyUseCase.cs:line 35
+   at Nagarro.VendingMachine.Presentation.Commands.BuyCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\BuyCommand.cs:line 26
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-09 14:54:41,091 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 14:55:15,598 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 14:55:17,940 ERROR Nagarro.VendingMachine.VendingMachineApplication - The requested product (Coca-Cola) is out of stock!
+Nagarro.VendingMachine.Business.Exceptions.InsufficientStockException: The requested product (Coca-Cola) is out of stock!
+   at Nagarro.VendingMachine.Business.UseCases.BuyUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\BuyUseCase.cs:line 39
+   at Nagarro.VendingMachine.Presentation.Commands.BuyCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\BuyCommand.cs:line 26
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-09 14:55:43,867 INFO  Nagarro.VendingMachine.Business.Services.PaymentService.CashPayment - User made a cash payment
+2024-04-09 14:55:43,867 INFO  Nagarro.VendingMachine.Business.UseCases.BuyUseCase - Still water bought
+2024-04-09 14:55:43,900 ERROR Nagarro.VendingMachine.VendingMachineApplication - Oh no, your product (Still water) is stuck in the machine! Please contact the administrator!
+Nagarro.VendingMachine.Business.Exceptions.ProductStuckException: Oh no, your product (Still water) is stuck in the machine! Please contact the administrator!
+   at Nagarro.VendingMachine.Business.UseCases.BuyUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\BuyUseCase.cs:line 55
+   at Nagarro.VendingMachine.Presentation.Commands.BuyCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\BuyCommand.cs:line 26
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-09 15:01:23,971 INFO  Nagarro.VendingMachine.Program - Application started

@@ -1,0 +1,17 @@
+{
+  "Name": "Volume",
+  "StartTime": "2010-01-01T00:00:00",
+  "EndTime": "2026-02-02T00:00:00",
+  "Sales": {
+    "Products": [
+      {
+        "Name": "Chococolate",
+        "Quantity": 2
+      },
+      {
+        "Name": "Chips",
+        "Quantity": 1
+      }
+    ]
+  }
+}

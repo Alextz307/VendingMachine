@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SalesReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Sale>
+		<Date>2024-03-20T05:43:35.0060917</Date>
+		<Name>Chococolate</Name>
+		<Price>9</Price>
+		<PaymentMethod>cash</PaymentMethod>
+	</Sale>
+	<Sale>
+		<Date>2024-03-26T18:04:37.154666</Date>
+		<Name>Chococolate</Name>
+		<Price>9</Price>
+		<PaymentMethod>cash</PaymentMethod>
+	</Sale>
+	<Sale>
+		<Date>2024-03-26T18:05:16.610236</Date>
+		<Name>Chips</Name>
+		<Price>5</Price>
+		<PaymentMethod>cash</PaymentMethod>
+	</Sale>
+</SalesReport>

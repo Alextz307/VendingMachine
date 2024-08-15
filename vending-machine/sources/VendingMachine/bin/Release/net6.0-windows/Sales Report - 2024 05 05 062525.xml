@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SalesReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Sale>
+		<Date>2024-05-05T06:25:12.3362623+03:00</Date>
+		<Name>Chocolate</Name>
+		<Price>9.0</Price>
+		<PaymentMethod>cash</PaymentMethod>
+	</Sale>
+</SalesReport>

@@ -1,0 +1,13 @@
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\bin\Debug\net6.0\VendingMachine.Domain.deps.json
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\bin\Debug\net6.0\VendingMachine.Domain.dll
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\bin\Debug\net6.0\VendingMachine.Domain.pdb
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\obj\Debug\net6.0\VendingMachine.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\obj\Debug\net6.0\VendingMachine.Domain.AssemblyInfoInputs.cache
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\obj\Debug\net6.0\VendingMachine.Domain.AssemblyInfo.cs
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\obj\Debug\net6.0\VendingMachine.Domain.csproj.CoreCompileInputs.cache
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\obj\Debug\net6.0\VendingMachine.Domain.sourcelink.json
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\obj\Debug\net6.0\VendingMachine.Domain.dll
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\obj\Debug\net6.0\refint\VendingMachine.Domain.dll
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\obj\Debug\net6.0\VendingMachine.Domain.pdb
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\obj\Debug\net6.0\ref\VendingMachine.Domain.dll
+C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Domain\obj\Debug\net6.0\VendingMachine.Domain.csproj.AssemblyReference.cache

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SalesReport>
+	<Sale>
+		<Date>2024-03-20T05:43:35.0060917</Date>
+		<Name>Chococolate</Name>
+		<Price>9</Price>
+		<PaymentMethod>cash</PaymentMethod>
+	</Sale>
+</SalesReport>

@@ -1,0 +1,384 @@
+2024-04-09 15:05:54,618 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 15:35:16,949 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 15:35:47,873 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 15:35:53,533 INFO  Nagarro.VendingMachine.Business.UseCases.LoginUseCase - User logged in
+2024-04-09 15:36:24,242 INFO  Nagarro.VendingMachine.Business.Services.ReportService.ReportService - User generated a xml report for Stock
+2024-04-09 16:04:59,568 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 16:05:52,661 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 16:07:34,617 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 16:12:23,024 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 16:14:57,491 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 16:17:21,273 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 16:18:14,630 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 16:23:01,042 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-09 16:23:34,641 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 16:47:03,720 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 16:48:00,433 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 16:48:38,140 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 16:49:16,477 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 16:50:09,423 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 16:54:18,255 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 16:55:01,836 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 16:58:25,273 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 17:00:01,509 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 17:00:12,348 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 17:02:52,283 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 17:03:09,061 INFO  Nagarro.VendingMachine.Business.Services.PaymentService.CashPayment - User made a cash payment
+2024-04-10 17:03:09,062 INFO  Nagarro.VendingMachine.Business.UseCases.BuyUseCase - Still water bought
+2024-04-10 17:03:14,341 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-10 17:03:25,054 INFO  Nagarro.VendingMachine.Business.Services.PaymentService.CashPayment - User made a cash payment
+2024-04-10 17:03:25,055 INFO  Nagarro.VendingMachine.Business.UseCases.BuyUseCase - Chococolate bought
+2024-04-10 17:03:36,269 INFO  Nagarro.VendingMachine.Business.Services.PaymentService.CashPayment - User made a cash payment
+2024-04-10 17:03:36,272 INFO  Nagarro.VendingMachine.Business.UseCases.BuyUseCase - Chococolate bought
+2024-04-10 17:03:36,274 ERROR Nagarro.VendingMachine.VendingMachineApplication - Oh no, your product (Chococolate) is stuck in the machine! Please contact the administrator!
+Nagarro.VendingMachine.Business.Exceptions.ProductStuckException: Oh no, your product (Chococolate) is stuck in the machine! Please contact the administrator!
+   at Nagarro.VendingMachine.Business.UseCases.BuyUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\BuyUseCase.cs:line 55
+   at Nagarro.VendingMachine.Presentation.Commands.BuyCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\BuyCommand.cs:line 26
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-10 17:20:46,614 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 17:20:48,999 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-10 17:50:28,903 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 17:50:31,978 ERROR Nagarro.VendingMachine.VendingMachineApplication - SQLite Error 1: 'no such table: Products'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Products'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__19_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at Nagarro.VendingMachine.Presentation.Views.ShelfView.DisplayProducts(IEnumerable`1 products) in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Views\ShelfView.cs:line 12
+   at Nagarro.VendingMachine.Business.UseCases.LookUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\LookUseCase.cs:line 24
+   at Nagarro.VendingMachine.Presentation.Commands.LookCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\LookCommand.cs:line 22
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-10 18:17:07,284 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:17:10,706 ERROR Nagarro.VendingMachine.VendingMachineApplication - An exception was thrown while activating Nagarro.VendingMachine.Business.UseCases.LookUseCase -> Nagarro.VendingMachine.DataAccess.Product.SQLite.SqliteDbProductRepositoryEF.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Nagarro.VendingMachine.Business.UseCases.LookUseCase -> Nagarro.VendingMachine.DataAccess.Product.SQLite.SqliteDbProductRepositoryEF.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.String)' on type 'SqliteDbProductRepositoryEF'.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Products'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__19_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method42(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source)
+   at Nagarro.VendingMachine.DataAccess.Product.SQLite.ProductContext.InitializeDatabase() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Product\SQLite\ProductContext.cs:line 26
+   at Nagarro.VendingMachine.DataAccess.Product.SQLite.ProductContext..ctor(String connectionString) in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Product\SQLite\ProductContext.cs:line 16
+   at Nagarro.VendingMachine.DataAccess.Product.SQLite.SqliteDbProductRepositoryEF..ctor(String connectionString) in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Product\SQLite\SqliteDbProductRepositoryEF.cs:line 18
+   at lambda_method9(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<>c__DisplayClass14_0.<UseSingleConstructorActivation>b__0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest& request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest& request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest& request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest& request)
+   at Autofac.Core.Lifetime.LifetimeScope.Autofac.IComponentContext.ResolveComponent(ResolveRequest& request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context)
+   at Nagarro.VendingMachine.UseCaseFactory.Create[TUseCase]() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\UseCaseFactory.cs:line 17
+   at Nagarro.VendingMachine.Presentation.Commands.LookCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\LookCommand.cs:line 22
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-10 18:18:11,333 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:18:13,951 ERROR Nagarro.VendingMachine.VendingMachineApplication - An exception was thrown while activating Nagarro.VendingMachine.Business.UseCases.LookUseCase -> Nagarro.VendingMachine.DataAccess.Product.SQLite.SqliteDbProductRepositoryEF.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Nagarro.VendingMachine.Business.UseCases.LookUseCase -> Nagarro.VendingMachine.DataAccess.Product.SQLite.SqliteDbProductRepositoryEF.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.String)' on type 'SqliteDbProductRepositoryEF'.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Products'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__19_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method42(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source)
+   at Nagarro.VendingMachine.DataAccess.Product.SQLite.ProductContext.InitializeDatabase() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Product\SQLite\ProductContext.cs:line 26
+   at Nagarro.VendingMachine.DataAccess.Product.SQLite.ProductContext..ctor(String connectionString) in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Product\SQLite\ProductContext.cs:line 16
+   at Nagarro.VendingMachine.DataAccess.Product.SQLite.SqliteDbProductRepositoryEF..ctor(String connectionString) in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Product\SQLite\SqliteDbProductRepositoryEF.cs:line 18
+   at lambda_method9(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<>c__DisplayClass14_0.<UseSingleConstructorActivation>b__0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest& request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest& request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest& request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest& request)
+   at Autofac.Core.Lifetime.LifetimeScope.Autofac.IComponentContext.ResolveComponent(ResolveRequest& request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context)
+   at Nagarro.VendingMachine.UseCaseFactory.Create[TUseCase]() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\UseCaseFactory.cs:line 17
+   at Nagarro.VendingMachine.Presentation.Commands.LookCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\LookCommand.cs:line 22
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-10 18:18:33,738 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:18:35,877 ERROR Nagarro.VendingMachine.VendingMachineApplication - An exception was thrown while activating Nagarro.VendingMachine.Business.UseCases.LookUseCase -> Nagarro.VendingMachine.DataAccess.Product.SQLite.SqliteDbProductRepositoryEF.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Nagarro.VendingMachine.Business.UseCases.LookUseCase -> Nagarro.VendingMachine.DataAccess.Product.SQLite.SqliteDbProductRepositoryEF.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(System.String)' on type 'SqliteDbProductRepositoryEF'.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Products'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__19_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method42(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source)
+   at Nagarro.VendingMachine.DataAccess.Product.SQLite.ProductContext.InitializeDatabase() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Product\SQLite\ProductContext.cs:line 26
+   at Nagarro.VendingMachine.DataAccess.Product.SQLite.ProductContext..ctor(String connectionString) in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Product\SQLite\ProductContext.cs:line 16
+   at Nagarro.VendingMachine.DataAccess.Product.SQLite.SqliteDbProductRepositoryEF..ctor(String connectionString) in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Product\SQLite\SqliteDbProductRepositoryEF.cs:line 18
+   at lambda_method9(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<>c__DisplayClass14_0.<UseSingleConstructorActivation>b__0(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Pipeline.ResolvePipelineBuilder.<>c__DisplayClass14_0.<BuildPipeline>b__1(ResolveRequestContext context)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext context)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest& request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest& request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest& request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest& request)
+   at Autofac.Core.Lifetime.LifetimeScope.Autofac.IComponentContext.ResolveComponent(ResolveRequest& request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context)
+   at Nagarro.VendingMachine.UseCaseFactory.Create[TUseCase]() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\UseCaseFactory.cs:line 17
+   at Nagarro.VendingMachine.Presentation.Commands.LookCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\LookCommand.cs:line 22
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-10 18:20:29,611 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:20:33,371 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-10 18:22:12,870 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:22:16,097 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-10 18:22:59,554 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:23:01,879 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-10 18:30:41,985 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:30:45,235 INFO  Nagarro.VendingMachine.Business.UseCases.LoginUseCase - User logged in
+2024-04-10 18:30:47,118 ERROR Nagarro.VendingMachine.VendingMachineApplication - SQLite Error 1: 'no such table: Sales'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Sales'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1156
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1184
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 815
+   at Nagarro.VendingMachine.DataAccess.Sale.SQLite.SqliteDbSaleRepository.GetAll() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Sale\SQLite\SqliteDbSaleRepository.cs:line 57
+   at Nagarro.VendingMachine.Business.UseCases.Reports.SalesReportUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\Reports\SalesReportUseCase.cs:line 25
+   at Nagarro.VendingMachine.Presentation.Commands.Reports.SalesReportCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\Reports\SalesReportCommand.cs:line 26
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-10 18:31:00,644 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:31:05,120 INFO  Nagarro.VendingMachine.Business.UseCases.LoginUseCase - User logged in
+2024-04-10 18:31:06,320 ERROR Nagarro.VendingMachine.VendingMachineApplication - SQLite Error 1: 'no such table: Sales'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Sales'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1156
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1184
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 815
+   at Nagarro.VendingMachine.DataAccess.Sale.SQLite.SqliteDbSaleRepository.GetAll() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Sale\SQLite\SqliteDbSaleRepository.cs:line 57
+   at Nagarro.VendingMachine.Business.UseCases.Reports.SalesReportUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\Reports\SalesReportUseCase.cs:line 25
+   at Nagarro.VendingMachine.Presentation.Commands.Reports.SalesReportCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\Reports\SalesReportCommand.cs:line 26
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-10 18:32:12,305 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:32:15,060 INFO  Nagarro.VendingMachine.Business.UseCases.LoginUseCase - User logged in
+2024-04-10 18:32:16,407 ERROR Nagarro.VendingMachine.VendingMachineApplication - SQLite Error 1: 'no such table: Sales'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Sales'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1156
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1184
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 815
+   at Nagarro.VendingMachine.DataAccess.Sale.SQLite.SqliteDbSaleRepository.GetAll() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Sale\SQLite\SqliteDbSaleRepository.cs:line 57
+   at Nagarro.VendingMachine.Business.UseCases.Reports.SalesReportUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\Reports\SalesReportUseCase.cs:line 25
+   at Nagarro.VendingMachine.Presentation.Commands.Reports.SalesReportCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\Reports\SalesReportCommand.cs:line 26
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-10 18:32:29,679 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:32:32,523 INFO  Nagarro.VendingMachine.Business.UseCases.LoginUseCase - User logged in
+2024-04-10 18:32:33,675 ERROR Nagarro.VendingMachine.VendingMachineApplication - SQLite Error 1: 'no such table: Sales'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Sales'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1156
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1184
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 815
+   at Nagarro.VendingMachine.DataAccess.Sale.SQLite.SqliteDbSaleRepository.GetAll() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Sale\SQLite\SqliteDbSaleRepository.cs:line 57
+   at Nagarro.VendingMachine.Business.UseCases.Reports.SalesReportUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\Reports\SalesReportUseCase.cs:line 25
+   at Nagarro.VendingMachine.Presentation.Commands.Reports.SalesReportCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\Reports\SalesReportCommand.cs:line 26
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-10 18:36:34,137 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:36:39,518 INFO  Nagarro.VendingMachine.Business.UseCases.LoginUseCase - User logged in
+2024-04-10 18:36:40,762 ERROR Nagarro.VendingMachine.VendingMachineApplication - SQLite Error 1: 'no such table: Sales'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Sales'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1156
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1184
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 815
+   at Nagarro.VendingMachine.DataAccess.Sale.SQLite.SqliteDbSaleRepository.GetAll() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\Sale\SQLite\SqliteDbSaleRepository.cs:line 57
+   at Nagarro.VendingMachine.Business.UseCases.Reports.SalesReportUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\Reports\SalesReportUseCase.cs:line 25
+   at Nagarro.VendingMachine.Presentation.Commands.Reports.SalesReportCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\Reports\SalesReportCommand.cs:line 26
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-04-10 18:36:50,331 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:36:53,652 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-10 18:41:47,062 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:41:52,994 INFO  Nagarro.VendingMachine.Business.UseCases.LoginUseCase - User logged in
+2024-04-10 18:41:55,378 INFO  Nagarro.VendingMachine.Business.Services.ReportService.ReportService - User generated a xml report for Sales
+2024-04-10 18:45:29,578 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 18:45:32,251 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-10 19:48:00,575 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 19:48:04,034 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-10 19:48:33,542 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 19:48:36,157 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-04-10 20:19:41,364 INFO  Nagarro.VendingMachine.Program - Application started
+2024-04-10 20:19:49,367 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-05-31 19:01:20,086 INFO  Nagarro.VendingMachine.Program - Application started
+2024-05-31 19:01:32,932 INFO  Nagarro.VendingMachine.Business.Services.PaymentService.CashPayment - User made a cash payment
+2024-05-31 19:01:32,932 INFO  Nagarro.VendingMachine.Business.UseCases.BuyUseCase - Chocolate bought
+2024-05-31 19:01:38,764 ERROR Nagarro.VendingMachine.VendingMachineApplication - The instance of entity type 'Sale' cannot be tracked because another instance with the same key value for {'Name'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+System.InvalidOperationException: The instance of entity type 'Sale' cannot be tracked because another instance with the same key value for {'Name'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.NullableKeyIdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at Nagarro.VendingMachine.DataAccess.SQLite.SqliteDbSaleRepositoryEF.Add(Sale newSale) in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.DataAccess\SQLite\SqliteDbSaleRepositoryEF.cs:line 42
+   at Nagarro.VendingMachine.Business.Services.PaymentService.PaymentService.Execute(Product product) in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\Services\PaymentService\PaymentService.cs:line 33
+   at Nagarro.VendingMachine.Business.UseCases.BuyUseCase.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Business\UseCases\BuyUseCase.cs:line 47
+   at Nagarro.VendingMachine.Presentation.Commands.BuyCommand.Execute() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine.Presentation\Commands\BuyCommand.cs:line 26
+   at Nagarro.VendingMachine.VendingMachineApplication.Run() in C:\Users\alexo\Downloads\RL_Alexandru_Lorintz\vending-machine\sources\VendingMachine\VendingMachineApplication.cs:line 32
+2024-05-31 19:09:38,345 INFO  Nagarro.VendingMachine.Program - Application started
+2024-05-31 19:09:41,319 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed
+2024-05-31 19:09:58,655 INFO  Nagarro.VendingMachine.Business.Services.PaymentService.CashPayment - User made a cash payment
+2024-05-31 19:09:58,655 INFO  Nagarro.VendingMachine.Business.UseCases.BuyUseCase - Chococolate bought
+2024-05-31 19:10:03,742 INFO  Nagarro.VendingMachine.Business.UseCases.LookUseCase - Look action performed

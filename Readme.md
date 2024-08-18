@@ -1,7 +1,7 @@
 # Vending Machine Console App
 
 ## Overview
-This is a console-based Vending Machine application built using C# and .NET. The application simulates the basic functionalities of a vending machine, allowing users to browse available products, make purchases, and pay using different payment methods.
+This is a console-based Vending Machine application built during Nagarro's Remote Learning Program, using C# and .NET. The application simulates the basic functionalities of a vending machine, allowing users to browse available products, make purchases, and pay using different payment methods.
 
 ## Features
 - **Browse Products**: Users can view the list of available products.
